@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Deno",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "outputCapture": "std",
+      "runtimeExecutable": "deno",
+      "runtimeArgs": [
+        "-A",
+        "--inspect",
+        "--importmap=./import_map.json",
+        "--allow-net",
+        "index.ts"
+      ],
+      "port": 9229
+    }
+  ]
+}
